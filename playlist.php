@@ -31,11 +31,11 @@ if ($format=='json') {
 } else if ($format=='html') {
   foreach ($videos as $video) {
     extract((array)$video);
-    echo "<a href=\"$href\">$title [$time]</a>\n";
+    echo "<a href=\"$href\">$title</a> [$time]\n";
   }
 } else if ($format=='markdown') {
   foreach ($videos as $video) {
     extract((array)$video);
-    echo html_entity_decode("- [$title [$time]]($href)\n");
+    echo html_entity_decode("- [$title]($href) [$time]\n");
   }
 }
