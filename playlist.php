@@ -1,8 +1,9 @@
 <?php
-$replaces = [['|GopherCon 2015: |',''],['|GopherCon 2014 |','']];
+$replaces = [['|GopherCon 2015: |',''],['|GopherCon 2014 |',''],['|GopherCon 2016: |','']];
 $format = 'markdown'; // markdown, json, html
 $list = 'PL2ntRZ1ySWBcD_BiJiDJUcyrb2w3bTulF'; // 2014
 $list = 'PL2ntRZ1ySWBf-_z-gHCOR2N156Nw930Hm'; // 2015
+$list = 'PL2ntRZ1ySWBdliXelGAItjzTMxy2WQh0P'; // 2016
 $base = 'https://www.youtube.com';
 
 // retrieve

@@ -1,5 +1,5 @@
 <?php
-$replaces = [['| - PyCon 2016|',''],['/   PyCon 2016/',''],['|  |',' ']];
+$replaces = [['|   |',' - '],['| - PyCon 2016|',''],['|&#39;|','\'']];
 $format = 'markdown'; // markdown, json, html
 $channel = 'UCwTD5zJbsQGJN75MwbykYNw'; // PyCon 2016 
 $base = 'https://www.youtube.com';
