@@ -40,10 +40,12 @@ for($i=0;$i<$count;$i++) {
 if ($format=='json') {
   echo json_encode($videos);
 } else if ($format=='html') {
+  echo "<ul>\n";
   foreach ($videos as $video) {
     extract((array)$video);
-    echo "<a href=\"$href\">$title</a> [$time]<br/>";
+    echo "<li><a href=\"$href\">$title</a> [$time]</li>\n";
   }
+  echo "</ul>\n";
 } else if ($format=='markdown') {
   foreach ($videos as $video) {
     extract((array)$video);
