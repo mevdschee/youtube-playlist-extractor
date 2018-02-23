@@ -37,13 +37,12 @@ for($i=0;$i<$count;$i++) {
 }
 
 // print
-echo '<pre>';
 if ($format=='json') {
   echo json_encode($videos);
 } else if ($format=='html') {
   foreach ($videos as $video) {
     extract((array)$video);
-    echo "<a href=\"$href\">$title</a> [$time]\n";
+    echo "<a href=\"$href\">$title</a> [$time]<br/>";
   }
 } else if ($format=='markdown') {
   foreach ($videos as $video) {
