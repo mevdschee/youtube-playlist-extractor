@@ -37,7 +37,7 @@ for($i=0;$i<$count;$i++) {
 }
 
 // print
-
+echo '<pre>';
 if ($format=='json') {
   echo json_encode($videos);
 } else if ($format=='html') {
